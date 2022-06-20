@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máquina de cartão</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-maquina">
+      <div class="content">
+        <div class="header">
+          <img src="https://img.icons8.com/windows/32/undefined/contactless-payment.png"/>
+        </div>
+        <div class="screen">
+          <div class="screen-header">
+            <img width="14" src="https://img.icons8.com/material-outlined/24/undefined/wifi--v1.png"/>
+            <img width="14" src="https://img.icons8.com/material-outlined/24/undefined/low-connection.png"/>
+            <span class="clock">6/1/21 10h39</span>
+            <span class="battery-container">
+              <div>100%</div>
+              <div class="battery"></div>
+            </span>
+          </div>
+          <div class="screen-content">
+            <span class="value">
+              <sup>R$</sup>
+              <p class="value-input">0,00</p>
+            </span>
+          </div>
+        </div>
+        <div class="top-buttons">
+          <button class="button">MENU</button>
+          <button class="button">ÚLT. PGTOS</button>
+        </div>
+        <div class="buttons">
+          <div class="column">
+            <button class="button" data-action="add">1</button>
+            <button class="button" data-action="add">4</button>
+            <button class="button" data-action="add">7</button>
+            <button class="button" data-action="move-down">&darr;</button>
+          </div>
+          <div class="column">
+            <button class="button" data-action="add">2</button>
+            <button class="button" data-action="add">5</button>
+            <button class="button" data-action="add">8</button>
+            <button class="button" data-action="add">0</button>
+          </div>
+          <div class="column">
+            <button class="button" data-action="add">3</button>
+            <button class="button" data-action="add">6</button>
+            <button class="button" data-action="add">9</button>
+            <button class="button" data-action="move-top">&uarr;</button>
+          </div>
+          <div class="column">
+            <button class="button bg-red" data-action="delete">&times;</button>
+            <button class="button bg-yellow" data-action="back">&lsaquo;</button>
+            <button class="button bg-green confirm" data-action="confirm">&check;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
